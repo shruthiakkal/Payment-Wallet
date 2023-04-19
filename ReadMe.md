@@ -6,7 +6,7 @@ All the IDS generated are system generated UUIDs
 
 All dates are stored in DB as JS date format, in response date is converted to ISO8601 format
 
-Base URL : `http:localhost:3000`
+Base URL : `3.110.147.192:8000`
 
 HEADER: `Content-Type:application/json`
 
@@ -16,13 +16,14 @@ API version : `v0`
 
 Method: `POST`
 
-URL: `{base_url}/api/v0/wallet/setup`
+URL: `{base_url}:/api/v0/wallet/setup`
+base_url: `3.110.147.192:8000`
 
 Request:
 
 ```
 {
-  "name": "SAM",
+  "name": "JAM",
   "balance":100.1234
 }
 ```
@@ -36,7 +37,7 @@ Response:
     "id": "85ad5bdb-26d3-4edd-994f-12a724751824",
     "balance": 100.1235,
     "transactionId": "57b26c06-1dd0-4f2f-a1f8-67ed6d68ce3e",
-    "name": "SAM",
+    "name": "JAM",
     "date": "2023-04-19T18:38:15+05:30"
   }
 }
@@ -58,6 +59,8 @@ Possible Error Codes:
 Method: `GET`
 
 URL: `{base_url}/api/v0/wallet/:walletId`
+base_url: `3.110.147.192:8000`
+
 
 URL Params:
 
@@ -72,7 +75,7 @@ Response:
   "Status": 200,
   "body": {
     "id": "9a02d977-7ff1-4ab2-b7f0-ac74d06ebfcf",
-    "name": "SAM",
+    "name": "JAM",
     "balance": 0,
     "date": "2023-04-19T15:39:08+05:30"
   }
@@ -95,6 +98,8 @@ Possible Error Codes:
 Method: `POST`
 
 URL: `{base_url}/api/v0/wallet/transact/:walletid`
+base_url: `3.110.147.192:8000`
+
 
 URL Params:
 
@@ -140,6 +145,8 @@ Possible Error Codes:
 Method: `GET`
 
 URL: `{base_url}/api/v0/wallet/transactions?walletId={walletId}&skip={skip}&limit={limit}&sortField={sortField}&sortType={sortType}`
+base_url: `3.110.147.192:8000`
+
 
 URL Params:
 
@@ -148,7 +155,7 @@ walletId : ID of the wallet to fetch transactions
 limit : no of transactions given in each response
 skip : no of blocks of transactions (each block equals limit) to skip
 sortField: field with which to sort, AMOUNT and DATE are supported in this API
-sortType: field to decide whether to sort in ascending or descending order,possible values DESC andASC
+sortType: field to decide whether to sort in ascending or descending order,possible values DESC and ASC
 
 ```
 
