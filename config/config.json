@@ -9,7 +9,7 @@
         "pool": {
           "max": 10,
           "min": 0,
-          "aquire": 1000,
+          "acquire": 100000,
           "idle": 10000
       },
       "retry": {
