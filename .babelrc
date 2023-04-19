@@ -1,0 +1,8 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+      "@babel/plugin-proposal-optional-chaining",
+      "transform-es2015-modules-commonjs",
+      "@babel/transform-runtime"
+    ]
+} 

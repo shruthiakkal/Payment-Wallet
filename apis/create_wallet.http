@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/v0/wallet/setup
+Content-Type:application/json
+
+{
+  "name": "SAM2",
+  "balance":100.12345
+}
