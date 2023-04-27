@@ -1,3 +1,8 @@
+# MIGRATION COMMANDS
+1. npx sequelize-cli migration:generate --name create-wallets - this creates a migration folder with a migration file called wallets.
+2. sequelize-cli db:migrate:undo -- revert last migration
+3. sequelize-cli db:migrate -- to run migration
+
 # APIS
 
 ## API configs

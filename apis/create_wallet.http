@@ -1,4 +1,4 @@
-POST http://localhost:3000/api/v0/wallet/setup
+POST http://localhost:8000/api/v0/wallet/setup
 Content-Type:application/json
 
 {

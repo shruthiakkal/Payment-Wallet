@@ -1,2 +1,2 @@
-GET http://localhost:3000/api/v0/wallet/9a02d977-7ff1-4ab2-b7f0-ac74d06ebfcf
+GET http://localhost:8000/api/v0/wallet/9a02d977-7ff1-4ab2-b7f0-ac74d06ebfcf
 Content-Type:application/json
